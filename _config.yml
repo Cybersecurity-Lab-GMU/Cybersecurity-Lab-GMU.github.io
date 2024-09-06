@@ -6,8 +6,8 @@ domain: "https://cybersecurity-lab-gmu.github.io/"
 baseurl: ""
 
 twitter_username: hiddenmarkov
-github_username: sec-deadlines
-github_repo: sec-deadlines
+github_username: Cybersecurity-Lab-GMU
+github_repo: Cybersecurity-Lab-GMU
 ga_id: UA-104921371-1
 
 markdown: kramdown
