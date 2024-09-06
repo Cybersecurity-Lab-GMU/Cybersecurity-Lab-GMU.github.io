@@ -1,4 +1,4 @@
-# Security and Privacy deadlines countdown
+# Cybersecurity-Lab-GMU ddl countdown
 
 Based on [ai-deadlines](https://aideadlin.es) by @abshkdz
 
