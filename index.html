@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>{{ site.title }}</title>
+
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{ "/static/css/deadlines.css" | prepend:site.baseurl }}" media="screen,projection">
@@ -20,10 +21,15 @@
         <div class="row">
           <div class="col-xs-12 col-sm-8">
             <h1>
-              {{ site.title }}<br>
-              <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ site.description }}{% if site.twitter_hashtag %} #{{ site.twitter_hashtag }}{% endif %}" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              <iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-            </h1>
+  {{ site.title }}<br>
+<!--   <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ site.description }}{% if site.twitter_hashtag %} #{{ site.twitter_hashtag }}{% endif %}" data-show-count="false" style="font-size:13px;">Tweet</a>
+<!--   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> --> -->
+  <iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+  <a href="https://clustrmaps.com/site/1c16p" title="Visit tracker">
+    <img src="//www.clustrmaps.com/map_v2.png?d=5CsG3pqkgVn9haQct1u6kk4W1WcUU_erfcKVzeX44VM&cl=ffffff" style="margin-left: 10px;" />
+  </a>
+</h1>
+
           </div>
           <div class="col-xs-12">
             {{ site.description }}
