@@ -1,3 +1,9 @@
+.page-header .col-sm-4 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 body {
   font-size: 16px;
   line-height: 23px;
