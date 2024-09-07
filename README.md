@@ -1,8 +1,14 @@
 # Cybersecurity-Lab-GMU ddl countdown
 
-## Plan to do later
+credit to [ai-deadlines](https://aideadlin.es) by @abshkdz
 
-Based on [ai-deadlines](https://aideadlin.es) by @abshkdz
+maintained by Cybersecurity-Lab-GMU
+
+## Plan to do later
+* Detailed the schedule/time
+* To be determined (TBD) time / estimated time
+* Registration deadline / submission deadline
+* Non-target conference del
 
 ## Adding/updating a conference
 
