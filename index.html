@@ -98,7 +98,7 @@
         {% assign deadline = conf.deadline[i] | replace: '%y', year | replace: '%Y', prevyear %}
         {% assign conf_id = conf.name | append: conf.year | append: '-' | append: i | slugify %}
         <div id="{{ conf_id }}" class="conf {% for tag in conf.tags %} {{tag}} {% endfor %}">
-          <div class="row">
+<!--           <div class="row"> -->
               <div class="col-xs-12 col-sm-6">
                 <h2><a href="{{conf.link}}">{{conf.name}} {{conf.year}}</a></h2>
                 <div class="meta">
@@ -124,7 +124,7 @@
                   </div>
                 </div>
               </div>
-          </div>
+<!--           </div> -->
           <hr>
         </div>
         {% endfor %}
