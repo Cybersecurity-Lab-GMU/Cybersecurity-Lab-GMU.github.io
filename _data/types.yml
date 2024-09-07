@@ -11,3 +11,5 @@
   tag: CONF
 - name: Workshop
   tag: SHOP
+- name: Software
+  tag: SW
