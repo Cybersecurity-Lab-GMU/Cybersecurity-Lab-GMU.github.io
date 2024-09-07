@@ -1,8 +1,27 @@
 .page-header .col-sm-4 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    padding-top: 10px;
 }
+
+@media (max-width: 767px) {
+    .page-header h1 {
+        font-size: 24px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .page-header .col-sm-4 {
+        justify-content: center;
+    }
+}
+
+.page-header .col-sm-4 iframe,
+.page-header .col-sm-4 img {
+    margin-left: 10px;
+}
+
 
 body {
   font-size: 16px;
