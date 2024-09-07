@@ -1,8 +1,7 @@
 .page-header .col-sm-4 {
     display: flex;
-    flex-direction: row; /* 确保子元素水平排列 */
+    flex-direction: row; /* 保持水平排列 */
     justify-content: flex-end;
-/*     align-items: center; */
     text-align: right;
     padding-top: 10px;
 }
@@ -11,11 +10,12 @@
     .page-header h1 {
         font-size: 24px;
         word-wrap: break-word;
-/*         text-align: center; */
+        text-align: center; /* 在小屏幕上居中标题 */
     }
     .page-header .col-sm-4 {
-/*         justify-content: center; */
-        flex-direction: column; /* 在小屏幕上子元素垂直排列 */
+        justify-content: center;
+        flex-direction: column; /* 在小屏幕上垂直排列 */
+        align-items: center; /* 确保按钮居中 */
     }
 }
 
@@ -38,6 +38,7 @@ body *::selection {
 
 .container {
   max-width: 980px;
+  margin: 0 auto; /* 保持内容居中 */
 }
 
 .top-strip {
@@ -47,7 +48,6 @@ body *::selection {
 }
 
 h1,h2,h3 {
-  /* font-weight: 300; */
   margin: 0;
   padding: 0;
 }
@@ -66,6 +66,7 @@ h2 {
 
 .page-header {
   margin-top: 2em;
+  text-align: center; /* 居中标题 */
 }
 
 p.authors {
@@ -116,4 +117,21 @@ a:hover, a:focus {
 
 footer {
   margin-bottom: 2em;
+  text-align: center; /* 页脚居中 */
+}
+
+.row {
+  justify-content: center; /* 保持栅格居中 */
+}
+
+.conf-container .row {
+  margin: 0 auto; /* 确保内容居中 */
+}
+
+.conf-container h2 {
+  text-align: center; /* 让标题居中 */
+}
+
+.conf-container .meta {
+  text-align: center; /* 内容居中 */
 }
