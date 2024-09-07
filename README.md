@@ -9,6 +9,7 @@ maintained by Cybersecurity-Lab-GMU
 * To be determined (TBD) time / estimated time
 * Registration deadline / submission deadline
 * Non-target conference del
+* https://www.mlsec.org/topnotch/
 
 ## Adding/updating a conference
 
