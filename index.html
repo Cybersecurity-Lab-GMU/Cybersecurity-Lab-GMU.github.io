@@ -48,7 +48,7 @@
                     {{ site.title }}
                   </h1>
                 </div>
-                <div class="col-xs-12 col-sm-4 text-right">
+                <div class="col-xs-12 col-sm-6 text-right">
           <!--         <iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe> -->
                   <a href="https://clustrmaps.com/site/1c16p" title="Visit tracker">
                     <img class="tracker-img" src="//www.clustrmaps.com/map_v2.png?d=5CsG3pqkgVn9haQct1u6kk4W1WcUU_erfcKVzeX44VM&cl=ffffff" />
@@ -99,14 +99,14 @@
         {% assign conf_id = conf.name | append: conf.year | append: '-' | append: i | slugify %}
         <div id="{{ conf_id }}" class="conf {% for tag in conf.tags %} {{tag}} {% endfor %}">
           <div class="row">
-              <div class="col-xs-12 col-dm-6">
+              <div class="col-xs-12 col-sm-6">
                 <h2><a href="{{conf.link}}">{{conf.name}} {{conf.year}}</a></h2>
                 <div class="meta">
                   {{ conf.description }}<br>
                   {{conf.date | replace: '-', '–'}} {% if conf.place %}// <a href="http://maps.google.com/?q={{conf.place}}">{{conf.place}}</a>{% endif %}<br>
                 </div>
               </div>
-              <div class="col-xs-12 col-dm-6">
+              <div class="col-xs-12 col-sm-6">
                 <span class="timer"></span>
                 <div class="deadline">
                   <div>
