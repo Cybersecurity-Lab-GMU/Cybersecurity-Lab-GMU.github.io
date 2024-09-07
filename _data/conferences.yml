@@ -1,6 +1,17 @@
 ---
    
 # Security and Privacy
+
+- name: FSE
+   year: 2025
+  date: May 12-15
+  description: ACM Conference on Foundations of Software Engineering
+  link: https://conf.researchr.org/home/fse-2025
+  deadline:
+    - "2024-09-05 23:59"
+    - "2024-09-12 23:59"
+  place: Trondheim, Norway
+  tags: [SW, CONF]
   
 - name: S&P (Oakland)
   year: 2025
