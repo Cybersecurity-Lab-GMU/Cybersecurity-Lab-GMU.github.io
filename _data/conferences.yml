@@ -8,7 +8,6 @@
   description: ACM Conference on Foundations of Software Engineering
   link: https://conf.researchr.org/home/fse-2025
   deadline:
-    - "2024-09-05 23:59"
     - "2024-09-12 23:59"
   place: Trondheim, Norway
   tags: [SW, CONF]
@@ -402,20 +401,6 @@
   comment: Abstract registration June 2nd AoE (Firm).
   date:  October 2-6
   place: Quito, Ecuador
-  tags: [CRYPTO, CONF]
-
-- name: FSE
-  description: IACR Transactions on Symmetric Cryptology
-  year: 2025
-  link: https://tosc.iacr.org/
-  deadline:
-    - "%Y-03-01 12:00"
-    - "%Y-06-01 12:00"
-    - "%Y-09-01 12:00"
-    - "%Y-11-22 12:00"
-  comment: Rolling deadline every quarter
-  date: March 17-21
-  place: Roma, Italy
   tags: [CRYPTO, CONF]
 
 - name: CHES
