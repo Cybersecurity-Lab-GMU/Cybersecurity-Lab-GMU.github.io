@@ -1,5 +1,18 @@
 ---
-   
+
+# AI
+
+- name: AAAI
+  year: 2025
+  date: Feb 27–March 4
+  description: AAAI Conference on Artificial Intelligence
+  link: https://aaai.org/conference/aaai/aaai-25/
+  deadline:
+    - "2024-08-16 23:59"
+  place: Philadelphia, Pennsylvania, USA
+  tags: [AI, CONF]
+
+  
 # Security and Privacy
   
 - name: S&P (Oakland)
