@@ -2,14 +2,14 @@
 
 # AI
 
-- name: AAAI
+- name: NAACL
   year: 2025
   date: Feb 27–March 4
-  description: AAAI Conference on Artificial Intelligence
-  link: https://aaai.org/conference/aaai/aaai-25/
+  description: Annual Conference of the North American Chapter of the Association for Computational Linguistics
+  link: https://2025.naacl.org/
   deadline:
-    - "2024-08-16 23:59"
-  place: Philadelphia, Pennsylvania, USA
+    - "2024-10-15 23:59"
+  place: Albuquerque, New Mexico, USA
   tags: [AI, CONF]
 
   
