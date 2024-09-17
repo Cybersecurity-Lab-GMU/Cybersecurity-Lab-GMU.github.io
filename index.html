@@ -143,5 +143,41 @@
     {% if site.ga_id %}
     {% include analytics.html %}
     {% endif %}
+    <script>
+  $(document).ready(function() {
+    var pageSize = 10; // 每页显示的会议数目
+    var currentPage = 1;
+    var conferences = $(".conf"); // 所有会议元素
+    var totalPages = Math.ceil(conferences.length / pageSize);
+
+    // 生成分页按钮
+    function createPagination() {
+      var pagination = $("#pagination");
+      pagination.empty(); // 清空现有的页码
+      for (var i = 1; i <= totalPages; i++) {
+        pagination.append("<button class='page-link' data-page='" + i + "'>" + i + "</button>");
+      }
+    }
+
+    // 显示当前页的会议
+    function showPage(page) {
+      currentPage = page;
+      conferences.hide(); // 隐藏所有会议
+      var start = (currentPage - 1) * pageSize;
+      var end = start + pageSize;
+      conferences.slice(start, end).show(); // 显示当前页的会议
+    }
+
+    // 页码点击事件
+    $(document).on("click", ".page-link", function() {
+      var page = $(this).data("page");
+      showPage(page);
+    });
+
+    // 初始化分页
+    createPagination();
+    showPage(currentPage); // 默认显示第一页
+  });
+</script>
   </body>
 </html>
