@@ -117,15 +117,15 @@
   tags: [SEC, CONF]
 
 #mobile
-- name: MobiySys
-  description: ACM International Conference on Mobile Systems, Applications, and Services
-  year: 2025
-  link: TBD
-  deadline: 
-    -TBD
-  date: TBD
-  place: CA
-  tags: [ CONF]
+# - name: MobiySys
+#   description: ACM International Conference on Mobile Systems, Applications, and Services
+#   year: 2025
+#   link: TBD
+#   deadline: 
+#     -TBD
+#   date: TBD
+#   place: CA
+#   tags: [ CONF]
 
 
 
