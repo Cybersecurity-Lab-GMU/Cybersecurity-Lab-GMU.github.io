@@ -148,7 +148,20 @@
     var pageSize = 10; // 每页显示的会议数目
     var currentPage = 1;
     var conferences = $(".conf"); // 所有会议元素
-    var totalPages = Math.ceil(conferences.length / pageSize);
+
+    // 通过 moment.js 筛选还未过期的会议
+    var validConferences = conferences.filter(function() {
+      var deadlineText = $(this).find(".deadline-time").text();
+      var deadline = moment(deadlineText, "DD MMM YYYY"); // 假设 deadline 时间格式是 "DD MMM YYYY"
+      return deadline.isAfter(moment()); // 只选择还未过期的会议
+    });
+
+    // 如果没有有效会议，将显示所有会议
+    if (validConferences.length === 0) {
+      validConferences = conferences;
+    }
+
+    var totalPages = Math.ceil(validConferences.length / pageSize);
 
     // 生成分页按钮
     function createPagination() {
@@ -162,10 +175,10 @@
     // 显示当前页的会议
     function showPage(page) {
       currentPage = page;
-      conferences.hide(); // 隐藏所有会议
+      validConferences.hide(); // 隐藏所有会议
       var start = (currentPage - 1) * pageSize;
       var end = start + pageSize;
-      conferences.slice(start, end).show(); // 显示当前页的会议
+      validConferences.slice(start, end).show(); // 显示当前页的会议
     }
 
     // 页码点击事件
@@ -179,5 +192,6 @@
     showPage(currentPage); // 默认显示第一页
   });
 </script>
+
   </body>
 </html>
