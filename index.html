@@ -104,7 +104,7 @@
         {% if conf.deadline %}
   {% assign deadline = conf.deadline[i] | replace: '%y', year | replace: '%Y', prevyear %}
 {% else %}
-  {% assign deadline = "" %}
+  {% assign deadline = "TBD"%}
 {% endif %}
         {% assign conf_id = conf.name | append: conf.year | append: '-' | append: i | slugify %}
         <div id="{{ conf_id }}" class="conf {% for tag in conf.tags %} {{tag}} {% endfor %}">
@@ -127,11 +127,10 @@
                       {% endif %}
                 <span class="deadline-time">
 {% if deadline %}
-  <p>Condition: Deadline exists</p>
+  Condition: Deadline exists
   {{ deadline }}
 {% else %}
-  <p>Condition: TBD</p>
-  TBD
+  Condition: TBD
 {% endif %}
 </span>
                     <div class="meta">
