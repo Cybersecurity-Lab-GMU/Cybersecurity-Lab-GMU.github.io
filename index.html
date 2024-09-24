@@ -61,9 +61,9 @@
 <div class="container">
           <div class="col-xs-12 ">
             {{ site.description }}
-            <p>To add/update a conference, <a target="_blank" href="//github.com/{{ site.github_username }}/{{ site.github_repo }}">send in a pull request</a>.
+            <p>To add/update a conference, send in a pull request.
             <p>Last update: {{ site.time | date: "%-d %B %Y" }}
-            <p>The webpage is maintained by: <a target= "_blank" href="https://agatah2333.github.io/">Xiaoyue Ma</a>, <a target= "_blank" href="https://chenfengduan.github.io/">Chengfeng Duan</a> and .....
+            <p>The webpage is maintained by: <a target= "_blank" href="https://agatah2333.github.io/">Xiaoyue Ma</a>, <a target= "_blank" href="https://chenfengduan.github.io/">Chengfeng Duan</a>, <a target ="_blank" href="https://lx913.github.io/">Xiang Li</a>a and .....
           </div>
         </div>
         <hr>
@@ -118,8 +118,12 @@
                       Deadline:
                       {% endif %}
                     <span class="deadline-time">
-                      {{ deadline }}
-                    </span>
+                  {% if deadline %}
+                    {{ deadline }}
+                  {% else %}
+                    TBD
+                  {% endif %}
+                </span>
                     <div class="meta">
                       {{ conf.comment }}
                     </div>
