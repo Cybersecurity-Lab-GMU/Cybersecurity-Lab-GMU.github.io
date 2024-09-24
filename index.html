@@ -118,7 +118,7 @@
                       Deadline:
                       {% endif %}
                     <span class="deadline-time">
-                  {% if deadline %}
+                  {% if deadline and deadline != "" %}
                     {{ deadline }}
                   {% else %}
                     TBD
