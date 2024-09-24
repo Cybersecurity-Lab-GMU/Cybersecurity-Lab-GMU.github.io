@@ -125,14 +125,13 @@
                       {% else %}
                       Deadline:
                       {% endif %}
-                    <p>Debug deadline value: {{ deadline }}</p>
-                <span class="deadline-time">
-{% if deadline %}
-  Condition: Deadline exists
-  {{ deadline }}
-{% else %}
-  Condition: TBD
-{% endif %}
+<!--                     <p>Debug deadline value: {{ deadline }}</p> -->
+               <span class="deadline-time">
+  {% if deadline != "" and deadline != null %}
+    {{ deadline }}
+  {% else %}
+    TBD
+  {% endif %}
 </span>
                     <div class="meta">
                       {{ conf.comment }}
