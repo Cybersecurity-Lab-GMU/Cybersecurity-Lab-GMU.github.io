@@ -98,6 +98,11 @@
         {% assign year = conf.year %}
         {% assign prevyear = conf.year | minus: 1 %}
         {% if conf.deadline %}
+  {{ conf.deadline[i] }}
+{% else %}
+  TBD
+{% endif %}
+        {% if conf.deadline %}
   {% assign deadline = conf.deadline[i] | replace: '%y', year | replace: '%Y', prevyear %}
 {% else %}
   {% assign deadline = "TBD" %}
