@@ -10,7 +10,6 @@
   deadline:
     - "2024-10-1 24:00"
   place: Singapore
-  comment: OpenReview Account Creation Deadline on Nov 1st, Paper Registration Deadline on Nov 08
   tags: [AI]
 
 - name: NAACL
@@ -30,6 +29,7 @@
   link: https://cvpr.thecvf.com/Conferences/2025
   deadline:
     - "2024-11-15 7:59"
+  comment: OpenReview Account Creation Deadline on Nov 01, Paper Registration Deadline on Nov 08
   place: Nashville, Tennessee, USA
   tags: [AI]
 
