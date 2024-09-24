@@ -2,6 +2,16 @@
 
 # AI
 
+- name: ICLR
+  year: 2025
+  date: April 24-April 28
+  description: The Thirteenth International Conference on Learning Representations
+  link: https://iclr.cc/
+  deadline:
+    - "2024-10-1 24:00"
+  place: Singapore
+  tags: [AI]
+
 - name: NAACL
   year: 2025
   date: April 29–May 4
@@ -20,6 +30,16 @@
   deadline:
     - "2024-11-15 7:59"
   place: Nashville, Tennessee, USA
+  tags: [AI]
+
+- name: ACL
+  year: 2025
+  date: July 27- August 1
+  description: The 63rd Annual Meeting of the Association for Computational Linguistics
+  link: https://2025.aclweb.org/
+  deadline:
+    - ""
+  place: Vienna, Austria
   tags: [AI]
   
 # Security and Privacy
