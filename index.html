@@ -117,13 +117,13 @@
                       {% else %}
                       Deadline:
                       {% endif %}
-                    <span class="deadline-time">
-                  {% if deadline and deadline != "" %}
-                    {{ deadline }}
-                  {% else %}
-                    TBD
-                  {% endif %}
-                </span>
+                <span class="deadline-time">
+  {% if conf.deadline and conf.deadline != "" and num_deadlines > 0 %}
+    {{ deadline }}
+  {% else %}
+    TBD
+  {% endif %}
+</span>
                     <div class="meta">
                       {{ conf.comment }}
                     </div>
