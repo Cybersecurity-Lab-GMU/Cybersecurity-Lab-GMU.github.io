@@ -102,9 +102,10 @@
   <p>Deadline: {% if conf.deadline %} {{ conf.deadline }} {% else %} TBD {% endif %}</p>
 {% endfor %} -->
         {% if conf.deadline and conf.deadline[i] != "" %}
-        
+        <p>Conference: {{ conf.name }} ({{ conf.year }})</p>
   {% assign deadline = conf.deadline[i] | replace: '%y', year | replace: '%Y', prevyear %}
 {% else %}
+        <p>Conference: {{ conf.name }} ({{ conf.year }})</p>
   {% assign deadline = "TBD"%}
 {% endif %}
         {% assign conf_id = conf.name | append: conf.year | append: '-' | append: i | slugify %}
@@ -128,11 +129,8 @@
                       {% endif %}
 <!--                     <p>Debug deadline value: {{ deadline }}</p> -->
                <span class="deadline-time">
-  {% if deadline != "" and deadline != null %}
+
     {{ deadline }}
-  {% else %}
-    TBD
-  {% endif %}
 </span>
                     <div class="meta">
                       {{ conf.comment }}
