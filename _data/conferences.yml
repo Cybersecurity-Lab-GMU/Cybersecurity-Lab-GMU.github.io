@@ -38,8 +38,8 @@
   date: July 27- August 1
   description: The 63rd Annual Meeting of the Association for Computational Linguistics
   link: https://2025.aclweb.org/
-  deadline:
-    - ""
+  # deadline:
+  #   - ""
   place: Vienna, Austria
   tags: [AI]
   
