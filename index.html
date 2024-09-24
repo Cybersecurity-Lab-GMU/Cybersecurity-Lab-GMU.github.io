@@ -97,14 +97,14 @@
         {% for i in (0..range_end) %}
         {% assign year = conf.year %}
         {% assign prevyear = conf.year | minus: 1 %}
-        {% for conf in site.data.conferences %}
+<!--         {% for conf in site.data.conferences %}
   <p>Conference: {{ conf.name }} ({{ conf.year }})</p>
   <p>Deadline: {% if conf.deadline %} {{ conf.deadline }} {% else %} TBD {% endif %}</p>
-{% endfor %}
+{% endfor %} -->
         {% if conf.deadline %}
   {% assign deadline = conf.deadline[i] | replace: '%y', year | replace: '%Y', prevyear %}
 {% else %}
-  {% assign deadline = "TBD" %}
+  {% assign deadline = "" %}
 {% endif %}
         {% assign conf_id = conf.name | append: conf.year | append: '-' | append: i | slugify %}
         <div id="{{ conf_id }}" class="conf {% for tag in conf.tags %} {{tag}} {% endfor %}">
@@ -127,7 +127,11 @@
                       {% endif %}
                 <span class="deadline-time">
   
-    {{ deadline }}
+    {% if deadline %}
+        {{ deadline }}
+      {% else %}
+        TBD
+      {% endif %}
 </span>
                     <div class="meta">
                       {{ conf.comment }}
